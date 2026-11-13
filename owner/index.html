@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SHARMATRACK — Owner Edition</title>
+<link rel="icon" type="image/png" href="../assets/sharmatrack-app-icon.png">
+<link rel="apple-touch-icon" href="../assets/sharmatrack-app-icon.png">
+<style>
+  :root{--blue:#0058a3;--dark:#004585;--ink:#16233a;--mut:#5a6b84;--line:#c9d8ea;--bg:#f4f7fb}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px 28px}
+  header{text-align:center;padding:22px 16px 6px}
+  header img.logo{width:min(300px,78vw);height:auto}
+  header h1{font-size:21px;letter-spacing:.05em;color:var(--dark);margin-top:10px}
+  header p{font-size:13.5px;color:var(--mut);margin-top:4px;line-height:1.5}
+  .searchbar{position:sticky;top:0;background:var(--bg);padding:12px 0 8px;z-index:5}
+  .searchbar input{width:100%;font-size:17px;padding:13px 14px;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--ink)}
+  .count{font-size:13px;color:var(--mut);margin:8px 2px 0}
+  .client{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin:13px 0;box-shadow:0 1px 4px rgba(11,42,91,.07)}
+  .clienthead{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .clienthead .cname{font-size:19px;font-weight:800;color:var(--dark);line-height:1.25}
+  .clienthead .csub{font-size:12.5px;color:var(--mut);margin-top:2px}
+  .clienthead .go{margin-left:auto;color:var(--blue);font-weight:800;font-size:22px}
+  .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:2.5px 9px;background:#e8f1fa;color:var(--dark);vertical-align:2px;margin-left:6px}
+  .jobs{margin-top:11px;border-top:2px solid #eaf2fa;padding-top:6px}
+  .job{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);padding:11px 4px;border-bottom:1px solid #eef3f9}
+  .job:last-child{border-bottom:none}
+  .job .a{font-weight:700;font-size:16px;color:var(--ink)}
+  .job .b{display:block;font-weight:400;font-size:13px;color:var(--mut);margin-top:1px}
+  .job .arr{margin-left:auto;color:var(--blue);font-weight:800;font-size:19px}
+  .empty{text-align:center;color:var(--mut);padding:26px 10px;font-size:15px}
+  footer{text-align:center;padding:16px 16px 30px;color:var(--mut);font-size:13px;line-height:1.6}
+  footer img{width:150px;height:auto}
+  footer .st-tag{font-weight:800;letter-spacing:.14em;color:var(--dark);font-size:12px;margin-top:5px}
+  footer .dev{font-size:12.5px;margin-top:2px}
+  footer .lic{margin-top:8px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="../assets/sharmatrack-logo-blue-on-white.png" alt="SHARMATRACK">
+  <h1>SHARMATRACK — OWNER EDITION</h1>
+  <p>Every client, every job — one place.<br>Sharma Electric &amp; HVAC · Owner: Sanjay Sharma</p>
+</header>
+<div class="wrap">
+  <div class="searchbar">
+    <input id="q" type="search" inputmode="search" placeholder="Search client, address, or city…" autocomplete="off">
+    <p class="count" id="count"></p>
+  </div>
+  <div id="list">
+
+    <section class="client" data-search="z brothers eunice dunnellon nona">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-crew/">
+        <span><span class="cname">Z Brothers</span><span class="tag">COMPLETED</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-crew/3131/"><span><span class="a">3131 W Eunice Dr</span><span class="b">Dunnellon, FL · Plan: NONA</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-crew/3262/"><span><span class="a">3262 W Eunice Dr</span><span class="b">Dunnellon, FL · Plan: NONA</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-crew/3274/"><span><span class="a">3274 W Eunice Dr</span><span class="b">Dunnellon, FL · Plan: NONA</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-crew/3286/"><span><span class="a">3286 W Eunice Dr</span><span class="b">Dunnellon, FL · Plan: NONA</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <section class="client" data-search="exj root ocala marion oaks florence milano infinity vtx">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/exj-root-tracker/">
+        <span><span class="cname">EXJ Root</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/exj-root-tracker/212/"><span><span class="a">212 Marion Oaks Golf Rd</span><span class="b">Ocala, FL · Florence 1</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/exj-root-tracker/17385/"><span><span class="a">17385 SW 25th Cir</span><span class="b">Ocala, FL · Florence 1</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/exj-root-tracker/14065/"><span><span class="a">14065 SW 48th Ave</span><span class="b">Ocala, FL · Milano</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/exj-root-tracker/16321/"><span><span class="a">16321 SW 26th Terrace Rd</span><span class="b">Ocala, FL · Florence 1</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/exj-root-tracker/601/"><span><span class="a">601 Marion Oaks Golf Rd</span><span class="b">Ocala, FL · Florence 1</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <section class="client" data-search="nok construction orlando groveland longwood glaze madhosingh antle colorado">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-nok/">
+        <span><span class="cname">NOK Construction</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-nok/glaze/"><span><span class="a">132 Balmy Coast Road</span><span class="b">Groveland, FL · Glaze Residence</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-nok/109-forest-park-ct/"><span><span class="a">109 Forest Park Ct</span><span class="b">Longwood, FL · Madhosingh residence</span></span><span class="arr">→</span></a>
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-nok/antle/"><span><span class="a">3119 Colorado Ave</span><span class="b">Orlando, FL · Antle Residence Addition</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <section class="client" data-search="mrcela custom homes blandford orlando lake nona">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-mrcela/">
+        <span><span class="cname">MRCELA Custom Homes</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-mrcela/blandford/"><span><span class="a">9700 Blandford Rd</span><span class="b">Orlando, FL · Lake Nona</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <section class="client" data-search="dnr contracting mukherjee tampa el prado">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-dnr/">
+        <span><span class="cname">DNR Contracting</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-dnr/mukherjee/"><span><span class="a">4008 W El Prado Blvd</span><span class="b">Tampa, FL · Mukherjee Residence</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <section class="client" data-search="logan construction bella collina montverde vetta lot 69 hvac">
+      <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-logan/">
+        <span><span class="cname">Logan Construction Group</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
+        <span class="go">›</span>
+      </a>
+      <div class="jobs">
+        <a class="job" href="https://sharmaelechvac.github.io/sharmatrack-logan/lot-69/"><span><span class="a">16051 Vetta Dr</span><span class="b">Montverde, FL · Lot 69, Bella Collina · HVAC</span></span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+  </div>
+  <p class="empty" id="empty" hidden>No clients or jobs match that search.</p>
+</div>
+<footer>
+  <img src="../assets/sharmatrack-logo-blue-on-white.png" alt="SHARMATRACK">
+  <div class="st-tag">JOB TRACKER</div>
+  <div class="dev">Developed by Sanjay Sharma</div>
+  <div class="lic">Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596 · Owner Edition — internal index of client SharmaTrack pages. New clients and jobs are added here by Jarvis as their pages are created.</div>
+</footer>
+<script>
+(function(){
+  var q = document.getElementById('q'), count = document.getElementById('count'), empty = document.getElementById('empty');
+  var clients = Array.prototype.slice.call(document.querySelectorAll('.client'));
+  var jobs = Array.prototype.slice.call(document.querySelectorAll('.job'));
+  function update(){
+    var s = q.value.trim().toLowerCase(), shownC = 0, shownJ = 0;
+    clients.forEach(function(c){
+      var cMatch = !s || (c.getAttribute('data-search') + ' ' + c.querySelector('.cname').textContent.toLowerCase()).indexOf(s) !== -1;
+      var any = false;
+      Array.prototype.forEach.call(c.querySelectorAll('.job'), function(j){
+        var hit = cMatch || j.textContent.toLowerCase().indexOf(s) !== -1;
+        j.style.display = hit ? '' : 'none';
+        if (hit) { any = true; shownJ++; }
+      });
+      c.style.display = any ? '' : 'none';
+      if (any) shownC++;
+    });
+    count.textContent = shownC + (shownC === 1 ? ' client · ' : ' clients · ') + shownJ + (shownJ === 1 ? ' job' : ' jobs');
+    empty.hidden = shownC > 0;
+  }
+  q.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>
