@@ -13,7 +13,13 @@
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-text-size-adjust:100%}
   .wrap{max-width:760px;margin:0 auto;padding:0 16px 28px}
   header{text-align:center;padding:22px 16px 6px}
-  header img.logo{width:min(300px,78vw);height:auto}
+  header .sharma-card{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 18px;box-shadow:0 1px 4px rgba(11,42,91,.08);margin-bottom:14px}
+  header .sharma-card img{height:58px;width:auto;display:block}
+  header img.logo{width:min(300px,78vw);height:auto;display:block;margin:0 auto}
+  .clogo{height:46px;width:auto;max-width:120px;object-fit:contain;flex:none}
+  .clogo-dark{background:#10314f;border-radius:10px;padding:6px 10px;height:46px;display:flex;align-items:center;flex:none}
+  .clogo-dark img{height:32px;width:auto;max-width:110px;object-fit:contain;display:block}
+  .cbadge{flex:none;display:inline-block;border:2px solid var(--dark);color:var(--dark);border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px;letter-spacing:.05em;text-align:center;line-height:1.3;background:#fff}
   header h1{font-size:21px;letter-spacing:.05em;color:var(--dark);margin-top:10px}
   header p{font-size:13.5px;color:var(--mut);margin-top:4px;line-height:1.5}
   .searchbar{position:sticky;top:0;background:var(--bg);padding:12px 0 8px;z-index:5}
@@ -41,6 +47,7 @@
 </head>
 <body>
 <header>
+  <span class="sharma-card"><img src="logos/sharma-logo.png" alt="Sharma Electric &amp; HVAC"></span>
   <img class="logo" src="../assets/sharmatrack-logo-blue-on-white.png" alt="SHARMATRACK">
   <h1>SHARMATRACK — OWNER EDITION</h1>
   <p>Every client, every job — one place.<br>Sharma Electric &amp; HVAC · Owner: Sanjay Sharma</p>
@@ -54,6 +61,7 @@
 
     <section class="client" data-search="z brothers eunice dunnellon nona">
       <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-crew/">
+        <img class="clogo" src="logos/zbrothers.png" alt="Z Brothers Construction logo">
         <span><span class="cname">Z Brothers</span><span class="tag">COMPLETED</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
@@ -67,6 +75,7 @@
 
     <section class="client" data-search="exj root ocala marion oaks florence milano infinity vtx">
       <a class="clienthead" href="https://sharmaelechvac.github.io/exj-root-tracker/">
+        <img class="clogo" src="logos/exj-root.png" alt="EXJ Root LLC logo">
         <span><span class="cname">EXJ Root</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
@@ -81,6 +90,7 @@
 
     <section class="client" data-search="nok construction orlando groveland longwood glaze madhosingh antle colorado">
       <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-nok/">
+        <img class="clogo" src="logos/nok.png" alt="NOK Construction logo">
         <span><span class="cname">NOK Construction</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
@@ -93,6 +103,7 @@
 
     <section class="client" data-search="mrcela custom homes blandford orlando lake nona">
       <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-mrcela/">
+        <span class="clogo-dark"><img src="logos/mrcela.png" alt="MRCELA Custom Homes logo"></span>
         <span><span class="cname">MRCELA Custom Homes</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
@@ -103,6 +114,7 @@
 
     <section class="client" data-search="dnr contracting mukherjee tampa el prado">
       <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-dnr/">
+        <span class="cbadge">DNR<br>CONTRACTING LLC</span>
         <span><span class="cname">DNR Contracting</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
@@ -113,6 +125,7 @@
 
     <section class="client" data-search="logan construction bella collina montverde vetta lot 69 hvac">
       <a class="clienthead" href="https://sharmaelechvac.github.io/sharmatrack-logan/">
+        <span class="cbadge">LOGAN<br>CONSTRUCTION GROUP</span>
         <span><span class="cname">Logan Construction Group</span><span class="csub" style="display:block">Client SharmaTrack page →</span></span>
         <span class="go">›</span>
       </a>
