@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="sk" data-theme="track">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SHARMATRACK — How It Works | Sharma Electric &amp; HVAC</title>
 <meta name="description" content="SHARMATRACK is Sharma Electric & HVAC's field app for construction job tracking. Photo checklists, schedules, and progress for every house — in one place, on any phone.">
 <link rel="icon" type="image/png" href="assets/sharmatrack-app-icon.png">
@@ -80,7 +80,7 @@
   .checklist{list-style:none}
   .checklist li{padding:9px 0 9px 34px;position:relative;color:var(--ink);border-bottom:1px solid var(--blue-light);font-size:16px}
   .checklist li:last-child{border-bottom:none}
-  .checklist li::before{content:"✓";position:absolute;left:0;top:8px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:var(--white);font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .checklist li::before{content:"";position:absolute;left:0;top:8px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:var(--white);font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center}
 
   /* Phone mock */
   .phone-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
@@ -135,8 +135,11 @@
   .statement h2{color:var(--white);font-size:clamp(34px,6vw,56px);letter-spacing:-.02em;margin-bottom:14px}
   .statement p{color:var(--blue-mid);font-size:clamp(16px,2.4vw,20px);max-width:62ch;margin:0 auto}
 </style>
+<meta name="theme-color" content="#0058a3"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="SHARMATRACK"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="https://sharma-kit.sharma-crew.workers.dev/sharma-kit.css"><script src="https://sharma-kit.sharma-crew.workers.dev/sharma-kit.js" defer></script>
+<link rel="stylesheet" href="sk-bridge.css?v=1">
 </head>
-<body>
+<body class="sk">
+<div class="sk-offline" aria-live="polite"></div>
 
 <header>
   <div class="wrap header-in">
@@ -203,10 +206,10 @@
         <p><strong>7 of 16 steps done</strong>Photo checklist progress for this house</p>
       </div>
       <ul class="mini-check">
-        <li><span>Service &amp; meter</span><span class="done">Photo ✓</span></li>
-        <li><span>Interior panel</span><span class="done">Photo ✓</span></li>
-        <li><span>Grounding</span><span class="done">Photo ✓</span></li>
-        <li><span>Home runs</span><span class="done">Photo ✓</span></li>
+        <li><span>Service &amp; meter</span><span class="done">Photo </span></li>
+        <li><span>Interior panel</span><span class="done">Photo </span></li>
+        <li><span>Grounding</span><span class="done">Photo </span></li>
+        <li><span>Home runs</span><span class="done">Photo </span></li>
         <li><span>Switch boxes</span><span class="todo">Up next</span></li>
         <li><span>Inspection</span><span class="todo">Scheduled</span></li>
       </ul>
@@ -333,5 +336,6 @@
   </div>
 </footer>
 
+<script src="sk-init.js?v=1" defer></script>
 </body>
 </html>
