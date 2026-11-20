@@ -1,0 +1,18 @@
+/* macOS wide-screen look (Sanjay, 2026-11-19) — presentation only, >=960px.
+   POLISH-ONLY for this app: no persistent navigation exists to become a
+   source-list sidebar — spa.js builds an SK.stack hub (the marketing page)
+   with the Owner Edition as a pushed screen (no .sk-tabbar), and the kit
+   .sk-stackview is position:fixed, so a sidebar offset would break the
+   stack. The hub .wrap already runs 1080px wide; this file aligns the kit
+   header bar to the same 1100px measure, adds row hover and the brand
+   selection tint, and widens the standalone Owner Edition page
+   (owner/index.html links this file as ../macos.css; inside the stack the
+   Owner screen's own carried-in stylesheet still wins, so its in-app
+   rendering is unchanged). Below 960px nothing changes. CSS only. */
+@media (min-width:960px){
+  .sk-header__bar{ max-width:1100px; }
+  .wrap{ max-width:1100px; }
+  .sk-row:hover{ background:var(--sk-fill-2); }
+  .client .job:hover, .refjob:hover{ background:var(--sk-fill-2); }
+  ::selection{ background:rgba(0,88,163,.16); }
+}
