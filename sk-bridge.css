@@ -38,16 +38,37 @@ html.sk .tile.loading, html.sk .capcard.loading{
   background-size:800px 100%; animation:skShimmer 1.4s infinite linear; min-height:96px;
 }
 @media (prefers-reduced-motion: reduce){ html.sk *{ animation:none!important; transition:none!important; } }
-/* Dark mode (follows the phone, like the kit) */
-@media (prefers-color-scheme: dark){
-  html.sk body.sk{ background:#0E1116; color:#F2F4F8; }
-  html.sk .wrap, html.sk .hero, html.sk .section, html.sk .jobbtn, html.sk .card,
-  html.sk .capcard, html.sk .dvmap, html.sk .dvbar{ background:#1C1C1E; color:#F2F4F8; border-color:#33373D; }
-  html.sk .jobbar, html.sk .langbar, html.sk .namebar{ background:#1C1C1E; color:#F2F4F8; border-color:#33373D; }
-  html.sk .chip.st0{ background:#2C2C2E; color:#C7CEDA; }
-  html.sk .chip.st1{ background:rgba(90,169,240,.22); color:#8CC4F5; }
-  html.sk .chip.st2, html.sk .chip.done, html.sk .donebadge{ background:rgba(52,199,89,.2); color:#5BD98A; }
-  html.sk h1, html.sk h2, html.sk h3, html.sk .a{ color:#F2F4F8; }
-  html.sk .b, html.sk .b2, html.sk .ps, html.sk .dvhint{ color:#A7B0BE; }
-  html.sk input, html.sk select, html.sk textarea{ background:#2C2C2E; color:#F2F4F8; border-color:#3A3F46; }
+/* Dark — only when the user picks Dark in Appearance (kit v1.3).
+   Hand-scoped to the site + Owner Edition (both sheets style header/.wrap,
+   so every selector carries the scheme attribute). */
+html.sk[data-scheme="dark"] body.sk{ background:#0E1116; color:#F2F4F8; }
+html.sk[data-scheme="dark"] .site-hub header{ background:#1C1C1E; }
+html.sk[data-scheme="dark"] .site-hub nav a{ color:#8CC4F5; }
+html.sk[data-scheme="dark"] .hero{ background:linear-gradient(180deg,#14181F 0%,#0E1116 100%); }
+html.sk[data-scheme="dark"] section:not(.band-blue){ background:#14181F; }
+html.sk[data-scheme="dark"] .band-light{ background:#14181F; }
+html.sk[data-scheme="dark"] h1, html.sk[data-scheme="dark"] h2, html.sk[data-scheme="dark"] h3{ color:#EAF2FA; }
+html.sk[data-scheme="dark"] input{ background:#2C2C2E; color:#F2F4F8; border-color:#3A3F46; }
+
+/* ——— Site fixes (Steve's review, 2026-11-19) ——— */
+/* "See how it works": white on the #0058a3 fill, guaranteed in both schemes */
+html.sk .btn-primary{ background:#0058a3; color:#fff; }
+html.sk .btn-primary:hover{ background:#004585; color:#fff; }
+/* Lead text contrast in dark (was ~2.7:1) */
+html.sk[data-scheme="dark"] .hero p.lead,
+html.sk[data-scheme="dark"] .section-lead{ color:#B9CFE4; }
+html.sk[data-scheme="dark"] .app-icon-card{ background:#1C1C1E; color:#F2F4F8; border-color:#33373D; }
+html.sk[data-scheme="dark"] .app-icon-card strong{ color:#EAF2FA; }
+html.sk[data-scheme="dark"] .app-icon-card span{ color:#B9CFE4; }
+html.sk[data-scheme="dark"] .btn-ghost{ background:#fff; color:#004585; }
+/* Dark: the Track logo swaps to the white-on-blue brand tile (rounded,
+   deliberate) instead of the blue-on-white art showing as a white box */
+html.sk[data-scheme="dark"] .header-logo,
+html.sk[data-scheme="dark"] .hero-logo{
+  content:url("assets/sharmatrack-logo-white-on-blue.png");
+  border-radius:12px;
+}
+html.sk[data-scheme="dark"] header .logo{
+  content:url("assets/sharmatrack-logo-white-on-blue.png");
+  border-radius:12px;
 }
